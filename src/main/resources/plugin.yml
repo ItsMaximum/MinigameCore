@@ -1,0 +1,15 @@
+name: $name
+version: $version
+main: com.maximum.minigamecore.Main
+description: $description
+load: STARTUP
+authors:
+  - Maximum
+api-version: $apiVersion
+depend:
+  - ProtocolLib
+commands:
+  leave:
+    description: 'Used to leave the current queue or game'
+    usage: '/leave'
+    aliases: [l]
