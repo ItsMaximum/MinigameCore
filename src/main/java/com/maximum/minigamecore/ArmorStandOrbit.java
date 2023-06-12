@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.v1_19_R3.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_20_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
@@ -72,7 +72,7 @@ public class ArmorStandOrbit {
         player.showTitle(title);
         */
 
-        ArmorStand armorStand = new ArmorStand(serverPlayer.getLevel(), startX, startY, startZ);
+        ArmorStand armorStand = new ArmorStand(serverPlayer.level(), startX, startY, startZ);
         armorStand.setYHeadRot((float) ((Math.toDegrees(startAngle) + 180) % 360));
         ClientboundAddEntityPacket entityPacket = new ClientboundAddEntityPacket(armorStand);
         serverPlayer.connection.send(entityPacket);

@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.maximum.minigamecore"
-version = "1.0.1-SNAPSHOT"
+version = "1.0.2-SNAPSHOT"
 description = "Core Plugin for flinny.net minigames"
 
 java {
@@ -14,7 +14,7 @@ java {
 }
 
 dependencies {
-  paperweight.paperDevBundle("1.19.4-R0.1-SNAPSHOT")
+  paperweight.paperDevBundle("1.20-R0.1-SNAPSHOT")
   compileOnly("com.comphenix.protocol:ProtocolLib:5.0.0")
   // paperweight.foliaDevBundle("1.19.4-R0.1-SNAPSHOT")
   // paperweight.devBundle("com.example.paperfork", "1.19.4-R0.1-SNAPSHOT")
@@ -47,7 +47,7 @@ tasks {
       "name" to project.name,
       "version" to project.version,
       "description" to project.description,
-      "apiVersion" to "1.19"
+      "apiVersion" to "1.20"
     )
     inputs.properties(props)
     filesMatching("plugin.yml") {
